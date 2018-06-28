@@ -23,7 +23,7 @@ function islandora_doi_block_admin_form($form, $form_settings) {
 
   $form['islandora_doi_block_namespace_prefix'] = array(
     '#type' => 'textfield',
-    '#title' => t('Namespace prefix to use in the XPath'),
+    '#title' => t('Namespace prefix to use in the XPath expression'),
     '#default_value' => variable_get('islandora_doi_block_namespace_prefix', 'mods'),
   );
 
@@ -36,7 +36,7 @@ function islandora_doi_block_admin_form($form, $form_settings) {
   $form['islandora_doi_block_doi_xpath'] = array(
     '#type' => 'textfield',
     '#title' => t('DOI XPath'),
-    '#description' => t('MODS XPath for retrieving the DOI.'),
+    '#description' => t('XPath expression for retrieving the DOI.'),
     '#default_value' => variable_get('islandora_doi_block_doi_xpath', '/mods:mods/mods:identifier[@type="doi"]'),
   );
 

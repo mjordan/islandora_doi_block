@@ -1,5 +1,6 @@
 name = Islandora DOI Block
-core = 7.x
-description = Displays a DOI in a block.
-dependencies[] = islandora
+description = "Displays an object's DOI in a block."
 package = Islandora Tools
+core = 7.x
+configure = admin/islandora/tools/doi_block
+dependencies[] = islandora

@@ -46,13 +46,11 @@ function islandora_doi_block_block_view($delta) {
     $object = menu_get_object('islandora_object', 2);
     if ($object) {
       if (islandora_doi_block_show_for_cmodel($object)) {
-        // Use new customizable list of cmodels.
         $doi = islandora_doi_block_get_doi($object);
+        // Only generate block if there is a DOI.
         if ($doi) {
-          // Only generate block if there is a DOI.
-          $to_render['content']['doi'] = array(
-            // stuff....
-          );
+          $to_render['content'] = check_plain($doi);
+          $to_render['subject'] = t('DOI');
         }
       }
     }

@@ -18,7 +18,9 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 ## Configuration
 
-Configuration path is admin/islandora/tools/badges/altmetrics (Administration > Islandora > Islandora Utility Modules > Islandora DOI Block).
+Configuration path is admin/islandora/tools/doi_block (Administration > Islandora > Islandora Utility Modules > Islandora DOI Block). Define your DSID, namespace details, and XPath to where the DOIs are stored.
+
+You will need to configure the "Islandora DOI Block", as with any other block.
 
 ## License
 

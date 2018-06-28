@@ -1,0 +1,5 @@
+name = Islandora DOI Block
+core = 7.x
+description = Displays a DOI in a block.
+dependencies[] = islandora
+package = Islandora Tools

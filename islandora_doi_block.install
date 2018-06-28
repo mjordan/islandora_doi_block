@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for Islandora DOI Block.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function islandora_doi_block_uninstall() {
+  $vars = array(
+    'islandora_doi_block_source_dsid',
+    'islandora_doi_block_doi_xpath',
+    'islandora_doi_block_selected_cmodels',
+    'islandora_doi_block_namespace_prefix',
+    'islandora_doi_block_namespace_uri',
+  );
+  array_walk($vars, 'variable_del');
+}
